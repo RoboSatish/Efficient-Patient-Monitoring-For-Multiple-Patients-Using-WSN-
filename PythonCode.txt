@@ -1,0 +1,17 @@
+
+# we import the Twilio client from the dependency we just installed
+from twilio.rest import Client
+
+# the following line needs your Twilio Account SID and Auth Token
+client = Client("AC19fb941983a4becabdbf0930f2c14c40", "d5e2bbf61263d1575cd54384fb6f50fe")
+
+# change the "from_" number to your Twilio number and the "to" number
+# to the phone number you signed up for Twilio with, or upgrade your
+# account to send SMS to any phone number
+#+18057492794
+client.messages.create(to="+919923664459",
+                       from_="+18057492794",
+                       body="Hi, $24.95!")
+
+
+
